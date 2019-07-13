@@ -18,6 +18,6 @@ public class HelloController {
     public String Hello(@RequestParam(name ="name") String name, Model model){
         //@RequestParam 表示服务器接收到的参数
         model.addAttribute("name",name);  //将参数要注入视图模型之中
-        return "hello";  //自动去templates找hello模板
+        return "index";  //自动去templates找hello模板
     }
 }
